@@ -1,0 +1,65 @@
+const skills = [
+  { name: "Product Strategy", level: 95 },
+  { name: "Generative AI", level: 90 },
+  { name: "Machine Learning", level: 85 },
+  { name: "Data Analysis", level: 88 },
+  { name: "Python", level: 80 },
+  { name: "API Development", level: 82 }
+];
+
+const Skills = () => {
+  return (
+    <section className="py-20 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Skills Content */}
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-12 h-0.5 bg-primary"></div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Personal Skills</h2>
+            </div>
+            
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              With expertise spanning AI product management, machine learning implementation, 
+              and strategic planning, I bring a comprehensive skill set to drive AI innovation 
+              and deliver impactful solutions.
+            </p>
+            
+            <div className="space-y-6">
+              {skills.map((skill, index) => (
+                <div key={index} className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-foreground font-medium">{skill.name}</span>
+                    <span className="text-foreground font-bold">{skill.level}%</span>
+                  </div>
+                  <div className="w-full bg-muted rounded-full h-2">
+                    <div 
+                      className="bg-primary h-2 rounded-full transition-all duration-1000 ease-out"
+                      style={{ width: `${skill.level}%` }}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Image Section */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="w-80 h-96 bg-gradient-to-br from-muted to-muted/50 rounded-lg flex items-center justify-center">
+                <p className="text-muted-foreground text-center">
+                  Skills Image
+                  <br />
+                  <span className="text-sm">Upload when ready</span>
+                </p>
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-24 bg-primary rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Skills;
