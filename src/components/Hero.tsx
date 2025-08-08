@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="relative">
           <div className="w-72 h-80 rounded-lg overflow-hidden border border-primary/20">
             <img 
-              src="/lovable-uploads/f00ee814-9ec9-4369-b6bc-2089f2145ba4.png"
+              src="/lovable-uploads/589698ac-3b99-4060-878e-d05f733dc187.png"
               alt="Professional headshot" 
               className="w-full h-full object-cover object-center"
             />
