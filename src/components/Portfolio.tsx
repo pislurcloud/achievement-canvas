@@ -2,38 +2,31 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const projects = [
   {
-    title: "AI CHATBOT PLATFORM",
+    title: "HEALTH INSURANCE AI CHATBOT",
     category: "Gen AI Project",
     year: "2024",
-    description: "Developed a multi-model AI chatbot platform using GPT-4 and Claude, featuring conversation management and analytics dashboard.",
+    description: "Advanced AI chatbot system for health insurance services with intelligent query processing and customer support automation.",
     image: "placeholder"
   },
   {
-    title: "ML RECOMMENDATION ENGINE",
-    category: "AI/ML Development", 
+    title: "TENDER PROCESSING AUTOMATION GEN AI PLATFORM",
+    category: "Gen AI Project", 
     year: "2024",
-    description: "Built a personalized recommendation system using collaborative filtering and deep learning, improving user engagement by 40%.",
+    description: "Comprehensive AI platform for automating tender processing workflows with document analysis and intelligent matching.",
     image: "placeholder"
   },
   {
-    title: "COMPUTER VISION API",
+    title: "HEALTHCARE ML MODEL LIBRARY",
     category: "AI/ML Development",
-    year: "2023", 
-    description: "Created a scalable computer vision API for object detection and image classification using TensorFlow and FastAPI.",
+    year: "2024", 
+    description: "Comprehensive library of machine learning models specifically designed for healthcare applications and medical data analysis.",
     image: "placeholder"
   },
   {
-    title: "AI CONTENT GENERATOR", 
-    category: "Gen AI Project",
-    year: "2023",
-    description: "Developed an AI-powered content generation tool leveraging GPT models for marketing copy and blog post creation.",
-    image: "placeholder"
-  },
-  {
-    title: "DATA ANALYTICS DASHBOARD",
-    category: "Personal Project", 
-    year: "2023",
-    description: "Built a comprehensive analytics dashboard using React and D3.js to visualize AI model performance metrics.",
+    title: "ADVANCED DATA ANALYTICS PLATFORM", 
+    category: "AI/ML Development",
+    year: "2024",
+    description: "Sophisticated data analytics platform with advanced visualization and machine learning capabilities for business intelligence.",
     image: "placeholder"
   }
 ];
