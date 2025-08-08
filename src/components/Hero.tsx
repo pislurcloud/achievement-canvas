@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Github, Linkedin, Instagram } from "lucide-react";
-import heroPhoto from "@/assets/hero-photo.png";
 
 const Hero = () => {
   return (
@@ -52,7 +51,7 @@ const Hero = () => {
         <div className="relative">
           <div className="w-80 h-96 rounded-lg overflow-hidden border border-primary/20">
             <img 
-              src={heroPhoto} 
+              src="/lovable-uploads/f00ee814-9ec9-4369-b6bc-2089f2145ba4.png"
               alt="Professional headshot" 
               className="w-full h-full object-cover"
             />

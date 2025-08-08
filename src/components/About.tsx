@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import aboutPhoto from "@/assets/about-photo.png";
 
 const About = () => {
   return (
@@ -12,7 +11,7 @@ const About = () => {
             <div className="relative">
               <div className="w-full h-96 rounded-lg overflow-hidden">
                 <img 
-                  src={aboutPhoto} 
+                  src="/lovable-uploads/ae04ad06-6c30-46dc-90c9-b18590c81f50.png"
                   alt="About me professional photo" 
                   className="w-full h-full object-cover"
                 />
