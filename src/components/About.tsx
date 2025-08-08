@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import aboutPhoto from "@/assets/about-photo.png";
 
 const About = () => {
   return (
@@ -9,12 +10,12 @@ const About = () => {
           {/* Image Section */}
           <div className="relative">
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-muted to-muted/50 rounded-lg flex items-center justify-center">
-                <p className="text-muted-foreground text-center">
-                  About Me Photo
-                  <br />
-                  <span className="text-sm">Upload when ready</span>
-                </p>
+              <div className="w-full h-96 rounded-lg overflow-hidden">
+                <img 
+                  src={aboutPhoto} 
+                  alt="About me professional photo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-primary rounded-lg"></div>
             </div>

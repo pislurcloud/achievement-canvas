@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Github, Linkedin, Instagram } from "lucide-react";
+import heroPhoto from "@/assets/hero-photo.png";
 
 const Hero = () => {
   return (
@@ -46,15 +47,15 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Profile Image Placeholder */}
+      {/* Profile Image */}
       <div className="hidden lg:block flex-1 flex justify-end">
         <div className="relative">
-          <div className="w-80 h-96 bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg flex items-center justify-center border border-primary/20">
-            <p className="text-muted-foreground text-center">
-              Professional Photo
-              <br />
-              <span className="text-sm">Upload when ready</span>
-            </p>
+          <div className="w-80 h-96 rounded-lg overflow-hidden border border-primary/20">
+            <img 
+              src={heroPhoto} 
+              alt="Professional headshot" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-lg"></div>
         </div>
