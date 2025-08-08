@@ -9,14 +9,14 @@ const About = () => {
           {/* Image Section */}
           <div className="relative">
             <div className="relative">
-              <div className="w-full h-96 rounded-lg overflow-hidden">
+              <div className="w-full max-w-md h-80 rounded-lg overflow-hidden mx-auto lg:mx-0">
                 <img 
                   src="/lovable-uploads/ae04ad06-6c30-46dc-90c9-b18590c81f50.png"
                   alt="About me professional photo" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-primary rounded-lg"></div>
+              <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-primary rounded-lg"></div>
             </div>
           </div>
 

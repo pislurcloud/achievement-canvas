@@ -49,14 +49,14 @@ const Hero = () => {
       {/* Profile Image */}
       <div className="hidden lg:block flex-1 flex justify-end">
         <div className="relative">
-          <div className="w-80 h-96 rounded-lg overflow-hidden border border-primary/20">
+          <div className="w-72 h-80 rounded-lg overflow-hidden border border-primary/20">
             <img 
               src="/lovable-uploads/f00ee814-9ec9-4369-b6bc-2089f2145ba4.png"
               alt="Professional headshot" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
-          <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-lg"></div>
+          <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-lg"></div>
         </div>
       </div>
     </section>
