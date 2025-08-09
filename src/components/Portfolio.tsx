@@ -11,21 +11,21 @@ const projects = [
   {
     title: "TENDER PROCESSING AUTOMATION GEN AI PLATFORM",
     category: "Gen AI Project", 
-    year: "2024",
+    year: "2025",
     description: "Comprehensive AI platform for automating tender processing workflows with document analysis and intelligent matching.",
     image: "/lovable-uploads/05d435e3-c39d-4306-a049-b349dd27b5a3.png"
   },
   {
     title: "HEALTHCARE ML MODEL LIBRARY",
     category: "AI/ML Development",
-    year: "2024", 
+    year: "2022",
     description: "Comprehensive library of machine learning models specifically designed for healthcare applications and medical data analysis.",
     image: "/lovable-uploads/09686f80-5639-478a-bb83-66f10e490ffb.png"
   },
   {
     title: "ADVANCED DATA ANALYTICS PLATFORM", 
     category: "AI/ML Development",
-    year: "2024",
+    year: "2021",
     description: "Sophisticated data analytics platform with advanced visualization and machine learning capabilities for business intelligence.",
     image: "/lovable-uploads/ddb9b773-484e-4f9e-ac13-4780458c6e2b.png"
   }
