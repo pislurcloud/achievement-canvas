@@ -46,13 +46,11 @@ const Skills = () => {
           {/* Image Section */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-96 bg-gradient-to-br from-muted to-muted/50 rounded-lg flex items-center justify-center">
-                <p className="text-muted-foreground text-center">
-                  Skills Image
-                  <br />
-                  <span className="text-sm">Upload when ready</span>
-                </p>
-              </div>
+              <img 
+                src="/lovable-uploads/24a75a03-a4c8-49b0-92c5-1a095bb0c17d.png"
+                alt="AI Product Manager working with futuristic technology and data visualization"
+                className="w-80 h-96 object-cover rounded-lg"
+              />
               <div className="absolute -bottom-6 -right-6 w-32 h-24 bg-primary rounded-lg"></div>
             </div>
           </div>
