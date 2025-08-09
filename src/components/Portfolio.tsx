@@ -13,7 +13,7 @@ const projects = [
     category: "Gen AI Project", 
     year: "2024",
     description: "Comprehensive AI platform for automating tender processing workflows with document analysis and intelligent matching.",
-    image: "placeholder"
+    image: "/lovable-uploads/05d435e3-c39d-4306-a049-b349dd27b5a3.png"
   },
   {
     title: "HEALTHCARE ML MODEL LIBRARY",
@@ -27,7 +27,7 @@ const projects = [
     category: "AI/ML Development",
     year: "2024",
     description: "Sophisticated data analytics platform with advanced visualization and machine learning capabilities for business intelligence.",
-    image: "placeholder"
+    image: "/lovable-uploads/ddb9b773-484e-4f9e-ac13-4780458c6e2b.png"
   }
 ];
 
