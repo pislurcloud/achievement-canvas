@@ -58,7 +58,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {navItems.slice(0, -1).map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
@@ -71,6 +71,12 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
+            <Button
+              onClick={() => scrollToSection('#contact')}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2"
+            >
+              Contact Me
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
