@@ -30,22 +30,6 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Contact Info */}
-      <div className="hidden lg:flex flex-col items-end gap-4">
-        <p className="text-primary font-medium">Contact Me</p>
-        <div className="flex gap-3">
-          <Button variant="ghost" size="icon" className="hover:text-primary">
-            <Linkedin className="h-5 w-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="hover:text-primary">
-            <Github className="h-5 w-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="hover:text-primary">
-            <Instagram className="h-5 w-5" />
-          </Button>
-        </div>
-      </div>
-      
       {/* Profile Image */}
       <div className="hidden lg:block flex-1 flex justify-end">
         <div className="relative">
@@ -57,6 +41,19 @@ const Hero = () => {
             />
           </div>
           <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-lg"></div>
+          
+          {/* Social Links positioned below */}
+          <div className="flex justify-center gap-3 mt-6">
+            <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Linkedin className="h-5 w-5" />
+            </Button>
+            <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Github className="h-5 w-5" />
+            </Button>
+            <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Instagram className="h-5 w-5" />
+            </Button>
+          </div>
         </div>
       </div>
     </section>
