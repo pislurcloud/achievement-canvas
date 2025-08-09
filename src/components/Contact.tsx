@@ -34,13 +34,11 @@ const Contact = () => {
           {/* Contact Image & Info */}
           <div>
             <div className="relative mb-8">
-              <div className="w-full h-80 bg-gradient-to-br from-muted to-muted/50 rounded-lg flex items-center justify-center">
-                <p className="text-muted-foreground text-center">
-                  Contact Image
-                  <br />
-                  <span className="text-sm">Upload when ready</span>
-                </p>
-              </div>
+              <img 
+                src="/lovable-uploads/13ca9123-f97c-4788-be6a-8dfb7e80e88b.png"
+                alt="AI Product Manager working with data visualization"
+                className="w-full h-80 object-cover rounded-lg"
+              />
               <div className="absolute -bottom-4 -left-4 w-24 h-16 bg-primary rounded-lg"></div>
             </div>
 
@@ -76,7 +74,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-primary font-medium">Email :</p>
-                  <p className="text-muted-foreground">contact@aipm.com</p>
+                  <p className="text-muted-foreground">prashant.islur@gmail.com</p>
                 </div>
               </div>
             </div>
