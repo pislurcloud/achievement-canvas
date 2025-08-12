@@ -1,10 +1,12 @@
 const skills = [
   { name: "Product Strategy", level: 95 },
+  { name: "Agentic AI Development", level: 85 },
   { name: "Generative AI", level: 90 },
   { name: "Machine Learning", level: 85 },
   { name: "Data Analysis", level: 88 },
   { name: "Python", level: 80 },
-  { name: "API Development", level: 82 }
+  { name: "API Development", level: 82 },
+  { name: "Cloud Technologies", level: 90 }
 ];
 
 const Skills = () => {
