@@ -11,7 +11,7 @@ const experiences = [
   {
     company: "UST Global",
     role: "Engineering Manager",
-    period: "Feb 2021 — Dec 2024",
+    period: "Feb 2021 — Present",
     summary:
       "Directed AI/ML platform strategy and a $500K TCV cloud AI portfolio; led 20+ engineers, integrated cloud‑native architectures (Azure, GCP, AWS), established CI/CD and DevOps, and delivered predictive analytics and GPT‑based solutions at scale.",
   },
