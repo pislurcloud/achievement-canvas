@@ -36,12 +36,12 @@ const Footer = () => {
 
           {/* Right Side - Image */}
           <div className="relative">
-            <div className="w-full h-80 bg-gradient-to-br from-muted-foreground/10 to-muted-foreground/5 rounded-lg flex items-center justify-center">
-              <p className="text-muted-foreground text-center">
-                Thank You Image
-                <br />
-                <span className="text-sm">Upload when ready</span>
-              </p>
+            <div className="w-full h-80 rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/5e1a98d2-85ad-47d1-a443-9c61d4d70b2f.png"
+                alt="Thank you for visiting - workspace with laptop, plant and coffee"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
             <div className="absolute -bottom-4 -left-4 w-32 h-24 bg-primary rounded-lg"></div>
           </div>
