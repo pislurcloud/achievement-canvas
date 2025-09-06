@@ -11,7 +11,7 @@ const About = () => {
             <div className="relative">
               <div className="w-full max-w-md h-80 rounded-lg overflow-hidden mx-auto lg:mx-0">
                 <img 
-                  src="/lovable-uploads/51ca3925-e8d1-4f09-9d18-f347054da026.png"
+                  src="/lovable-uploads/02f7de00-e5f3-472f-b233-a9ac34b41e39.png"
                   alt="About me professional photo" 
                   className="w-full h-full object-cover object-center"
                 />
