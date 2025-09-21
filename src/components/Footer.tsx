@@ -59,13 +59,28 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <span className="text-muted-foreground text-sm">Follow me:</span>
             <div className="flex gap-3">
-              <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-primary"
+                onClick={() => window.open('https://www.linkedin.com/in/prashant-islur/', '_blank')}
+              >
                 <Linkedin className="h-4 w-4" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-primary"
+                onClick={() => window.open('https://github.com/prashantislur', '_blank')}
+              >
                 <Github className="h-4 w-4" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-primary"
+                onClick={() => window.open('https://www.instagram.com/prashant_islur/', '_blank')}
+              >
                 <Instagram className="h-4 w-4" />
               </Button>
             </div>

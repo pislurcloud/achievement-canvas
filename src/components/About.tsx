@@ -37,10 +37,29 @@ const About = () => {
             </p>
             
             <div className="flex gap-4">
-              <Button variant="default" className="group">
+              <Button 
+                variant="default" 
+                className="group"
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  contactSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 <span>Hire Me</span>
               </Button>
-              <Button variant="outline" className="group">
+              <Button 
+                variant="outline" 
+                className="group"
+                onClick={() => {
+                  // Create and trigger download of sample CV
+                  const link = document.createElement('a');
+                  link.href = 'data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA2MTIgNzkyXQovUmVzb3VyY2VzIDw8Ci9Gb250IDw8Ci9GMSA0IDAgUgo+Pgo+PgovQ29udGVudHMgNSAwIFIKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9CYXNlRm9udCAvSGVsdmV0aWNhCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9MZW5ndGggMTAwCj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKNzIgNzIwIFRkCihQcmFzaGFudCBJc2x1ciAtIEFJIFByb2R1Y3QgTWFuYWdlcikgVGoKNzIgNzAwIFRkCihFbWFpbDogcHJhc2hhbnQuaXNsdXJAZ21haWwuY29tKSBUago3MiA2ODAgVGQKKFBob25lOiArOTEgOTgyMDgzNDg5MikgVGoKNzIgNjYwIFRkCihMb2NhdGlvbjogTXVtYmFpLCBJbmRpYSkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYKMDAwMDAwMDAwOSAwMDAwMCBuCjAwMDAwMDAwNTggMDAwMDAgbgowMDAwMDAwMTE1IDAwMDAwIG4KMDAwMDAwMDI0NSAwMDAwMCBuCjAwMDAwMDAzMjIgMDAwMDAgbgp0cmFpbGVyCjw8Ci9TaXplIDYKL1Jvb3QgMSAwIFIKPj4Kc3RhcnR4cmVmCjQ3MgolJUVPRgo=';
+                  link.download = 'Prashant_Islur_CV.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                 <span>Download CV</span>
               </Button>

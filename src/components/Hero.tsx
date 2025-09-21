@@ -44,13 +44,28 @@ const Hero = () => {
           
           {/* Social Links positioned below */}
           <div className="flex justify-center gap-3 mt-6">
-            <Button variant="ghost" size="icon" className="hover:text-primary">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="hover:text-primary"
+              onClick={() => window.open('https://www.linkedin.com/in/prashant-islur/', '_blank')}
+            >
               <Linkedin className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="hover:text-primary"
+              onClick={() => window.open('https://github.com/prashantislur', '_blank')}
+            >
               <Github className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="hover:text-primary"
+              onClick={() => window.open('https://www.instagram.com/prashant_islur/', '_blank')}
+            >
               <Instagram className="h-5 w-5" />
             </Button>
           </div>

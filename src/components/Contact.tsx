@@ -4,19 +4,85 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
+    webhookUrl: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [showWebhook, setShowWebhook] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setIsLoading(true);
+
+    try {
+      // Option 1: Send via email (mailto)
+      const emailSubject = encodeURIComponent(formData.subject || 'Contact Form Submission');
+      const emailBody = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      
+      // Option 2: If webhook URL is provided, send to Zapier
+      if (formData.webhookUrl) {
+        try {
+          await fetch(formData.webhookUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            mode: "no-cors",
+            body: JSON.stringify({
+              name: formData.name,
+              email: formData.email,
+              subject: formData.subject,
+              message: formData.message,
+              timestamp: new Date().toISOString(),
+              source: "portfolio_website"
+            }),
+          });
+          
+          toast({
+            title: "Message Sent!",
+            description: "Your message has been sent via Zapier webhook. I'll get back to you soon!",
+          });
+        } catch (error) {
+          throw new Error("Webhook failed");
+        }
+      } else {
+        // Fallback to mailto
+        window.location.href = `mailto:prashant.islur@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+        
+        toast({
+          title: "Email Client Opened",
+          description: "Your default email client should open with the message pre-filled.",
+        });
+      }
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+        webhookUrl: formData.webhookUrl // Keep webhook URL
+      });
+
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an issue sending your message. Please try again or contact me directly at prashant.islur@gmail.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -131,9 +197,37 @@ const Contact = () => {
                     required
                   />
                 </div>
+
+                {/* Advanced Options */}
+                <div className="border-t pt-4">
+                  <Button 
+                    type="button" 
+                    variant="ghost" 
+                    onClick={() => setShowWebhook(!showWebhook)}
+                    className="text-sm text-muted-foreground"
+                  >
+                    {showWebhook ? 'Hide' : 'Show'} Advanced Options (Zapier Integration)
+                  </Button>
+                  
+                  {showWebhook && (
+                    <div className="mt-4">
+                      <Input
+                        name="webhookUrl"
+                        type="url"
+                        placeholder="Zapier Webhook URL (Optional)"
+                        value={formData.webhookUrl}
+                        onChange={handleInputChange}
+                        className="bg-background border-border"
+                      />
+                      <p className="text-xs text-muted-foreground mt-2">
+                        If provided, the form will send data to your Zapier webhook instead of opening email client.
+                      </p>
+                    </div>
+                  )}
+                </div>
                 
-                <Button type="submit" className="w-full">
-                  Send Message
+                <Button type="submit" className="w-full" disabled={isLoading}>
+                  {isLoading ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>
