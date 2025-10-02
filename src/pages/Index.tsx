@@ -2,9 +2,10 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
+import Achievements from "@/components/Achievements";
+import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
-
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,12 @@ const Index = () => {
         </section>
         <section id="portfolio">
           <Portfolio />
+        </section>
+        <section id="achievements">
+          <Achievements />
+        </section>
+        <section id="certifications">
+          <Certifications />
         </section>
         <section id="experience">
           <Experience />
