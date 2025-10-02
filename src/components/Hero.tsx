@@ -6,14 +6,15 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-between px-6 lg:px-12">
       <div className="flex-1 max-w-2xl">
         <div className="mb-6">
-          <p className="text-primary text-lg font-medium mb-4 animate-fade-in">
-            Hello Everyone.
-          </p>
           <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
-            I'M AN AI PRODUCT
+            TRANSFORMING IDEAS INTO
             <br />
-            <span className="text-primary">MANAGER</span>
+            <span className="text-primary">AI-POWERED PRODUCTS</span>
           </h1>
+          <p className="text-lg text-muted-foreground mb-8 animate-fade-in">
+            AI Product Manager with 15+ years driving $500K+ GenAI solutions. 
+            From IOCL tender automation to healthcare chatbots - I turn complex AI concepts into business value.
+          </p>
           <div className="flex items-center gap-4 animate-fade-in">
             <Button 
               variant="outline" 
