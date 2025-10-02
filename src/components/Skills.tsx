@@ -1,12 +1,12 @@
 const skills = [
-  { name: "Product Strategy", level: 95 },
-  { name: "Agentic AI Development", level: 85 },
-  { name: "Generative AI", level: 90 },
-  { name: "Machine Learning", level: 85 },
-  { name: "Data Analysis", level: 88 },
-  { name: "Python", level: 80 },
-  { name: "API Development", level: 82 },
-  { name: "Cloud Technologies", level: 90 }
+  { name: "Product Strategy & Roadmapping", level: 95 },
+  { name: "Generative AI (GPT-4, Claude, Llama)", level: 90 },
+  { name: "Agentic AI (LangChain, LangGraph, AutoGen)", level: 85 },
+  { name: "AI Workflow Automation (CrewAI, n8n)", level: 85 },
+  { name: "Cloud Platforms (AWS, Azure, GCP)", level: 90 },
+  { name: "Machine Learning & MLOps", level: 85 },
+  { name: "Agile & Product Management", level: 92 },
+  { name: "Python & API Development", level: 82 }
 ];
 
 const Skills = () => {
